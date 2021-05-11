@@ -1,5 +1,6 @@
 # mimikkoAutoSignin
 
+
 本项目使用GitHub Actions，用于[兽耳助手](https://www.mimikko.cn/)定时`每日签到`/`兑换能量`/`VIP每日抽奖`，并可选`推送到微信`
 
 >[keylol帖子](https://keylol.com/t675496-1-1)
