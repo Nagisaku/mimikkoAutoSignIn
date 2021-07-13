@@ -72,7 +72,7 @@ def main():
         parser.add_argument('-m', default=False,
                             metavar="misakakey", help="MisakaNet misakaKey")
 
-        args = parser.parse_args()
+        args = parser.parse_args(-a)
 
         # 如果不带参数启动
         if len(sys.argv) < 2:
