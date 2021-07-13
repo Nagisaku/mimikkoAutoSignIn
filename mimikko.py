@@ -34,7 +34,7 @@ def main():
 
     try:
         parser = argparse.ArgumentParser(
-            description='请从 登录账号(-u)和密码(-p) 或 AUTHORIZATION验证(-a) 中选择一种登录方式')
+            description='-a')
 
         parser.add_argument('-u', default=False, metavar='ID', help='登录账号(邮箱或手机号)')
         parser.add_argument('-p', default=False, metavar='password', help='登录密码')
@@ -332,7 +332,6 @@ def main():
     def mimikko():
         logging.info('脚本开始')
         global Authorization
-        Authorization = Authorization.strip()
         # 登录
         logging.info('开始登录')
         if user_id and user_password:
