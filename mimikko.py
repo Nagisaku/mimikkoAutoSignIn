@@ -38,7 +38,7 @@ def main():
 
         parser.add_argument('-u', default=False, metavar='ID', help='登录账号(邮箱或手机号)')
         parser.add_argument('-p', default=False, metavar='password', help='登录密码')
-        parser.add_argument('-a', default=True, metavar='Token',
+        parser.add_argument('-a', default=False, metavar='Token',
                             help='AUTHORIZATION验证，抓包获取')
         parser.add_argument('-e', default=False, metavar='code', help='助手代码，选择助手')
         parser.add_argument('-r', default=False,
@@ -329,10 +329,10 @@ def main():
         'maya': '摩耶'
     }
 
-
+global Authorization
     def mimikko():
         logging.info('脚本开始')
-        global Authorization
+        
         # 登录
         logging.info('开始登录')
         if user_id and user_password:
