@@ -72,7 +72,7 @@ def main():
         parser.add_argument('-m', default=False,
                             metavar="misakakey", help="MisakaNet misakaKey")
 
-        args = parser.parse_args(-a)
+        args = parser.parse_args()
 
         # 如果不带参数启动
         if len(sys.argv) < 2:
@@ -329,7 +329,7 @@ def main():
         'maya': '摩耶'
     }
 
-
+    global Authorization
     def mimikko():
         logging.info('脚本开始')
         global Authorization
