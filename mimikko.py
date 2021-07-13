@@ -34,7 +34,7 @@ def main():
 
     try:
         parser = argparse.ArgumentParser(
-            description='-a')
+            description='请从 登录账号(-u)和密码(-p) 或 AUTHORIZATION验证(-a) 中选择一种登录方式')
 
         parser.add_argument('-u', default=False, metavar='ID', help='登录账号(邮箱或手机号)')
         parser.add_argument('-p', default=False, metavar='password', help='登录密码')
