@@ -329,10 +329,10 @@ def main():
         'maya': '摩耶'
     }
 
-    global Authorization
     def mimikko():
         logging.info('脚本开始')
         global Authorization
+        Authorization = Authorization.strip()
         # 登录
         logging.info('开始登录')
         if user_id and user_password:
