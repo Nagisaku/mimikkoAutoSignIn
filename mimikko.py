@@ -329,8 +329,9 @@ def main():
         'maya': '摩耶'
     }
 
-global Authorization
+
     def mimikko():
+        global Authorization
         logging.info('脚本开始')
         
         # 登录
